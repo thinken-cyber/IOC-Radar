@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="color-scheme" content="dark" />
+<title>IOC Radar</title>
+<link rel="stylesheet" href="css/popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2 4 5v6c0 5 3.4 8.7 8 9 4.6-.3 8-4 8-9V5l-8-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="11" cy="10.3" r="3.1" stroke="currentColor" stroke-width="1.6"/>
+          <path d="m13.3 12.6 2.6 2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span>IOC Radar</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="lookup">
+        <div class="input-row">
+          <input id="iocInput" type="text" placeholder="Dán hash, domain, URL hoặc IP…" autocomplete="off" spellcheck="false" />
+          <span id="typeBadge" class="type-badge" hidden></span>
+        </div>
+        <button id="scanBtn" class="primary-btn" disabled>Quét</button>
+      </section>
+
+      <div id="recent" class="recent" hidden>
+        <span class="recent-label">Gần đây</span>
+        <div id="recentChips" class="recent-chips"></div>
+      </div>
+
+      <div id="status" class="status" hidden></div>
+
+      <section id="results" class="results" hidden></section>
+    </main>
+
+  </div>
+
+  <script type="module" src="js/popup.js"></script>
+</body>
+</html>

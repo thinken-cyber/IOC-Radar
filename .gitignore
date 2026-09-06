@@ -1,0 +1,7 @@
+.env
+.env.*
+!.env.example
+node_modules/
+F:/IOC-Radar-final.zip
+F:/IOC-Radar-installed/
+ioc-radar-extension.zip
