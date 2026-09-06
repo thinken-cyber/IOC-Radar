@@ -11,7 +11,7 @@ const statusEl = $('#status');
 const resultsEl = $('#results');
 const recentWrap = $('#recent');
 const recentChips = $('#recentChips');
-const BACKEND_URL = 'http://localhost:8787';
+const BACKEND_URL = 'https://ioc-radar.onrender.com';
 
 const RECENT_KEY = 'recentLookups';
 const MAX_RECENT = 8;

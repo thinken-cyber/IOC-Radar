@@ -19,7 +19,7 @@
   },
   "permissions": ["storage", "contextMenus"],
   "host_permissions": [
-    "http://localhost:8787/*"
+    "https://ioc-radar.onrender.com/*"
   ],
   "background": {
     "service_worker": "background.js",
