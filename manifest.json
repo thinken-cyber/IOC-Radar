@@ -3,6 +3,7 @@
   "name": "IOC Radar – Threat Intel Lookup",
   "version": "1.0.0",
   "description": "Tra cứu nhanh Hash, Domain, URL, IP với VirusTotal, AbuseIPDB, urlscan.io và gộp thành một đánh giá rủi ro duy nhất.",
+  "homepage_url": "https://github.com/thinken-cyber/IOC-Radar",
   "action": {
     "default_popup": "popup.html",
     "default_title": "IOC Radar – Threat Intel Lookup",
