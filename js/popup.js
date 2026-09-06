@@ -1,4 +1,4 @@
-import { detectIOC, typeLabel, IOC_TYPES } from '../lib/detect.js';
+import { detectIOC, isHash, typeLabel, IOC_TYPES } from '../lib/detect.js';
 import { pruneCache } from '../lib/cache.js';
 import { VERDICT_LABEL_VI } from '../lib/aggregate.js';
 
