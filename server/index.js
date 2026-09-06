@@ -157,6 +157,17 @@ const server = http.createServer(async (req, res) => {
     sendJson(res, 200, { ok: true });
     return;
   }
+  if (req.method === 'GET' && req.url === '/') {
+    sendJson(res, 200, {
+      name: 'IOC Radar API',
+      status: 'ok',
+      endpoints: {
+        health: 'GET /health',
+        scan: 'POST /scan'
+      }
+    });
+    return;
+  }
   if (req.method === 'POST' && req.url === '/scan') {
     await scan(req, res);
     return;
